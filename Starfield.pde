@@ -65,8 +65,8 @@ class Leaf extends Particle
   void move()
   {
     if (myX >0 && myX<600 && myY > 0 && myY < 600) {
-      myX = myX-1 + Math.cos(myAngle) * Math.random()*2;
-      myY = myY-1 + Math.sin(myAngle) * Math.random()*2;
+      myX = myX + Math.cos(myAngle) * (Math.random()*2)+1;
+      myY = myY + Math.sin(myAngle) * (Math.random()*2)+1;
     } 
     else {
       mySpeed = -mySpeed;
